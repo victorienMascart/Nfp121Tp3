@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * Junit creates the frame and performs the action without any delay before to close it
  */
 public class MVCTest {
+
     @Test
     public void testView() {
         Number number = new Number();

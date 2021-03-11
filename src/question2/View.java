@@ -1,6 +1,8 @@
 package question2;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 
 public class View  {
@@ -8,7 +10,10 @@ public class View  {
     private JButton jButton1;
     private JButton jButton2;
 
+    public Number number;
+
     View(Number number){
+        this.number = number;
         // create the window
         JFrame window = new JFrame();
         // give a title
@@ -37,7 +42,17 @@ public class View  {
         window.add(jPanel);
         // display the window
         window.setVisible(true);
+    }
 
-        number.addObserver(this);
+    public JButton getjButton1() {
+        return jButton1;
+    }
+
+    public JButton getjButton2() {
+        return jButton2;
+    }
+
+    public JTextField getjTextField() {
+        return jTextField;
     }
 }
